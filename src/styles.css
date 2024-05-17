@@ -1,0 +1,72 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #232527 #1B1B1F ;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1B1B1F;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #1B1B1F;
+  border-radius: 14px;
+  border: 3px solid var(--primary);
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('../src/assets/fonts/Geist-1.3.0/Geist-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Geist-Mono';
+  src: url('../src/assets/fonts/GeistMono-1.3.0/GeistMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+:root {
+  font-family: Geist, Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #0f0f0f;
+  background-color: #f6f6f6;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #D2DAE1;
+    background-color: #1B1B1F;
+  }
+
+  a:hover {
+    color: #24c8db;
+  }
+
+  input,
+  button {
+    color: #ffffff;
+    background-color: #0f0f0f98;
+  }
+  button:active {
+    background-color: #0f0f0f69;
+  }
+}

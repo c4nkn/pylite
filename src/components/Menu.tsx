@@ -11,10 +11,11 @@ import {
 interface MenuProps {
   onOpenFolderDialog: () => void;
   closeFolder: () => void;
-  folderOpened: string | null;
+  isFileOpened: string | null;
+  isFolderOpened: string | null;
 }
 
-const Menu: React.FC<MenuProps> = ({ onOpenFolderDialog, closeFolder, folderOpened }) => {
+const Menu: React.FC<MenuProps> = ({ onOpenFolderDialog, closeFolder, isFileOpened, isFolderOpened }) => {
   return (
     <Menubar>
       {/* File Menu */}
@@ -36,17 +37,14 @@ const Menu: React.FC<MenuProps> = ({ onOpenFolderDialog, closeFolder, folderOpen
             Open project/folder <MenubarShortcut>Ctrl+K</MenubarShortcut>
           </MenubarItem>
           <MenubarSeparator />
-          <MenubarItem>
+          <MenubarItem disabled={!isFolderOpened}>
             Save <MenubarShortcut>Ctrl+S</MenubarShortcut>
           </MenubarItem>
-          <MenubarItem>
+          <MenubarItem disabled={!isFileOpened || !isFolderOpened}>
             Save As <MenubarShortcut>Ctrl+Shift+S</MenubarShortcut>
           </MenubarItem>
-          <MenubarItem>
-            Save All <MenubarShortcut>Ctrl+K S</MenubarShortcut>
-          </MenubarItem>
           <MenubarSeparator />
-          <MenubarItem onClick={closeFolder} disabled={!folderOpened}>
+          <MenubarItem onClick={closeFolder} disabled={!isFolderOpened}>
             Close Folder <MenubarShortcut>Ctrl+K F</MenubarShortcut>
           </MenubarItem>
         </MenubarContent>

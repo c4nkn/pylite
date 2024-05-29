@@ -40,7 +40,7 @@ const MenubarTrigger = React.forwardRef<
   <MenubarPrimitive.Trigger
     ref={ref}
     className={cn(
-      "flex cursor-default select-none items-center rounded-sm px-3 py-1 outline-none bg-app-secondary hover:bg-shadow-controls focus:bg-shadow-controls focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground",
+      "flex cursor-default select-none items-center rounded-sm px-2 py-1 outline-none bg-app-secondary text-app-activetext hover:bg-shadow-controls focus:bg-shadow-controls focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground",
       className
     )}
     {...props}
@@ -89,7 +89,7 @@ const MenubarContent = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof MenubarPrimitive.Content>
 >(
   (
-    { className, align = "start", alignOffset = -4, sideOffset = 8, ...props },
+    { className, align = "start", alignOffset = -2, sideOffset = 2, ...props },
     ref
   ) => (
     <MenubarPrimitive.Portal>

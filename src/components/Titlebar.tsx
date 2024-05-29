@@ -22,11 +22,11 @@ const Titlebar = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <header data-tauri-drag-region className="flex flex-row h-9 w-screen justify-between items-center select-none bg-app-secondary">
-      <div data-tauri-drag-region className="flex items-center ps-3">
+      <div data-tauri-drag-region className="flex items-center ps-3 w-full">
         <span className="pe-2">{Icons.pyLiteSmall}</span>
         {children}
       </div>
-      <div data-tauri-drag-region>
+      <div data-tauri-drag-region className='w-full ms-20'>
         PyLite
       </div>
       <div data-tauri-drag-region className="flex">

@@ -22,7 +22,9 @@ module.exports = {
           primary: '#1B1B1F',
           secondary: '#171719',
           third: '#202126',
-          border: '#444348',
+          fourth: '#1E1E24',
+          winborder: '#444348',
+          border: '#31373D',
           button: '#151517',
           activetext: '#D2DAE1',
           inactivetext: '#606F7D'
@@ -31,8 +33,8 @@ module.exports = {
         'shadow': {
           controls: '#202024',
           buttons: '#202024',
-          tab: '#2C2C33',
-          filetree: '#2B2C33'
+          explorer: '#2B2C33',
+          tab: '#2C2C33'
         },
 
         // shadcn

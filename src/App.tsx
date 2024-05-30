@@ -104,7 +104,7 @@ function App() {
 
   const toggleCollapse = () => {
     collapseSidebar(true);
-  };
+  }; 
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {

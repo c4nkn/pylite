@@ -1,7 +1,10 @@
-# Tauri + React + Typescript
+<h1 align="center">PyLite</h1>
+<p align="center">Open-source, lightweight, modern looking IDE for Python.</p>
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+## Installation & Usage
+```
+git clone https://github.com/c4nkn/pylite.git
+cd PyLite
+npm i
+npm run tauri dev
+```

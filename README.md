@@ -4,8 +4,9 @@
 ⚠️ You are not allowed to distribute or sell any modified version of this project without crediting the original authors. Also this project is under development so there might be bugs, errors, problems etc.
 
 ## Installation & Usage
+
 ```
-git clone https://github.com/c4nkn/pylite.git
+git clone https://github.com/kavuundev/pylite.git
 cd PyLite
 npm i
 npm run tauri dev

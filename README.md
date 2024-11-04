@@ -3,7 +3,7 @@
 
 ⚠️ You are not allowed to distribute or sell any modified version of this project without crediting the original authors.
 
-> Also this project is under development so there might be bugs, errors, problems etc.
+> This project is under development so there might be bugs, errors, problems etc.
 
 ## Installation
 
